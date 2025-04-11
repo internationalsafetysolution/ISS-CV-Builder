@@ -1,3 +1,10 @@
-export const NavBarActions = ({ children }: { children: React.ReactNode }) => {
-  return <div className="flex gap-3 items-center">{children}</div>;
+import React from 'react';
+
+type NavBarActionsProps = {
+  children: React.ReactNode;
+  className?: string;
+};
+
+export const NavBarActions = ({ children, className = '' }: NavBarActionsProps) => {
+  return <div className={`flex gap-3 items-center ${className}`}>{children}</div>;
 };
