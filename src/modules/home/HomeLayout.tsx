@@ -149,7 +149,7 @@ const HomeLayout = () => {
                 <div className="bg-[#4E9D48] w-1 h-20 sm:h-auto sm:w-1 rounded-lg"></div>
                 <p className="text-base sm:text-lg text-[#343434] text-center sm:text-left">
                   “The secret to getting ahead is getting started”
-                  <br /> —Abdul Rehman
+                  <br /> —International Safety Solution
                 </p>
               </div>
 
