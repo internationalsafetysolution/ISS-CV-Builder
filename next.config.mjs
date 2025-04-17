@@ -16,7 +16,7 @@ const nextConfig = {
   images: {
     // Remote patterns are not needed for local static assets
     // You can add remote patterns for any external image domains if needed
-    domains: ['your-image-domain.com'],  // Optional, for any remote images
+    domains: ['cv.internationalsafetysolution.com'],  // Optional, for any remote images
   },
   async redirects() {
     return [
