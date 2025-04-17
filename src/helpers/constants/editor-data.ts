@@ -11,7 +11,7 @@ export const headers: {
 } = {
   'basic-details': { title: 'Basic details', component: BasicLayout },
   'skills-and-expertise': {
-    title: 'Skills and expertise',
+    title: 'Skills and Languages',
     component: SkillsLayout,
   },
   education: { title: 'Education', component: EducationLayout },

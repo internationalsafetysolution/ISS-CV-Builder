@@ -77,7 +77,7 @@ export const useFrameworks = create<ISkillState>()(
 export const useTechnologies = create<ISkillState>()(
   persist(
     (set, get) => ({
-      title: 'Technologies',
+      title: 'Skills',
       hasLevel: false,
       values: resumeData.skills.technologies,
       isEnabled: true,

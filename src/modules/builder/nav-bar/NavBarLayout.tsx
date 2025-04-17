@@ -1,13 +1,8 @@
 import { ChangeEvent, useCallback, useRef, useState } from 'react';
 import { NavBarActions, NavBarMenu, StyledButton } from './atoms';
 import {
-  useDatabases,
-  useFrameworks,
   useLanguages,
-  useLibraries,
-  usePractices,
   useTechnologies,
-  useTools,
 } from '@/stores/skills';
 
 import { AVAILABLE_TEMPLATES } from '@/helpers/constants';
@@ -56,12 +51,7 @@ const NavBarLayout = () => {
       volunteer: useVoluteeringStore.getState().volunteeredExps,
       skills: {
         languages: useLanguages.getState().get(),
-        frameworks: useFrameworks.getState().get(),
         technologies: useTechnologies.getState().get(),
-        libraries: useLibraries.getState().get(),
-        databases: useDatabases.getState().get(),
-        practices: usePractices.getState().get(),
-        tools: useTools.getState().get(),
       },
       activities: useActivity.getState().activities,
     };
@@ -103,21 +93,11 @@ const NavBarLayout = () => {
         } = uploadedResumeJSON;
         const {
           languages = [],
-          frameworks = [],
-          libraries = [],
-          databases = [],
           technologies = [],
-          practices = [],
-          tools = [],
         } = skills;
         useBasicDetails.getState().reset(basics);
         useLanguages.getState().reset(languages);
-        useFrameworks.getState().reset(frameworks);
-        useLibraries.getState().reset(libraries);
-        useDatabases.getState().reset(databases);
         useTechnologies.getState().reset(technologies);
-        usePractices.getState().reset(practices);
-        useTools.getState().reset(tools);
         useExperiences.getState().reset(work);
         useEducations.getState().reset(education);
         useVoluteeringStore.getState().reset(volunteer);

@@ -1,12 +1,7 @@
 import { useState } from 'react';
 import {
-  useDatabases,
-  useFrameworks,
   useLanguages,
-  useLibraries,
-  usePractices,
   useTechnologies,
-  useTools,
 } from '@/stores/skills';
 import EditSectionContainer from '@/helpers/common/components/EditSectionContainer';
 import Skill from './components/Skill';
@@ -14,12 +9,7 @@ import Skill from './components/Skill';
 const SkillsLayout = () => {
   const skillState = [
     useLanguages(),
-    useFrameworks(),
     useTechnologies(),
-    useLibraries(),
-    useDatabases(),
-    usePractices(),
-    useTools(),
   ];
 
   const [expanded, setExpanded] = useState<string | false>('Languages');

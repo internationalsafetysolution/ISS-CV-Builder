@@ -91,25 +91,15 @@ export default function ProfessionalTemplate() {
           </Section>
         </SectionValidator>
 
-        <SectionValidator value={skills.languages.concat(skills.frameworks)}>
-          <Section title="Technical expertise">
-            <RatedSkills items={skills.languages.concat(skills.frameworks)} />
+        <SectionValidator value={skills.languages}>
+          <Section title="Languages">
+            <RatedSkills items={skills.languages} />
           </Section>
         </SectionValidator>
 
-        <SectionValidator value={skills.technologies.concat(skills.libraries, skills.databases)}>
-          <Section title="Skills / Exposure">
-            <UnratedSkills items={skills.technologies.concat(skills.libraries, skills.databases)} />
-          </Section>
-        </SectionValidator>
-        <SectionValidator value={skills.practices}>
-          <Section title="Methodology/Approach">
-            <UnratedSkills items={skills.practices} />
-          </Section>
-        </SectionValidator>
-        <SectionValidator value={skills.tools}>
-          <Section title="Tools">
-            <UnratedSkills items={skills.tools} />
+        <SectionValidator value={skills.technologies}>
+          <Section title="Skills">
+            <UnratedSkills items={skills.technologies} />
           </Section>
         </SectionValidator>
         <SectionValidator value={resumeData.education}>
