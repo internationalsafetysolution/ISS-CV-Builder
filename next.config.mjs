@@ -14,9 +14,12 @@ const nextConfig = {
     ],
   },
   images: {
-    // Remote patterns are not needed for local static assets
-    // You can add remote patterns for any external image domains if needed
-    domains: ['cv.internationalsafetysolution.com'],  // Optional, for any remote images
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'avatars.githubusercontent.com',
+      },
+    ],
   },
   async redirects() {
     return [
