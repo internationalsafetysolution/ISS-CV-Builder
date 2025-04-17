@@ -14,12 +14,9 @@ const nextConfig = {
     ],
   },
   images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'avatars.githubusercontent.com',
-      },
-    ],
+    // Disable image optimization for local images
+    loader: 'imgix',  // imgix or other custom loader if needed
+    path: '',
   },
   async redirects() {
     return [
