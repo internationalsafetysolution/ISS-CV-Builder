@@ -105,12 +105,7 @@ const NavBarLayout = () => {
   return (
     <nav className="h-14 w-full bg-resume-852 relative flex py-2.5 pl-2 md:pl-5 pr-1 nd:pr-4 items-center shadow-level-8dp z-20 print:hidden">
       <Link href="/">
-        <Image
-          src="https://cv.internationalsafetysolution.com/icons/ISS-icon.png"
-          alt="logo"
-          height="80"
-          width="80"
-        />
+        <Image src={'/icons/ISS-icon.png'} alt="logo" height="80" width="80" />
       </Link>
       <div className="flex-auto flex justify-between items-center xs:ml-3 md:ml-5">
         <NavBarMenu>
