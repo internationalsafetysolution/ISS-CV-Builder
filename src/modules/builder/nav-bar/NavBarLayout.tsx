@@ -1,6 +1,6 @@
 import { ChangeEvent, useCallback, useRef, useState } from 'react';
 import { NavBarActions, NavBarMenu, StyledButton } from './atoms';
-import { useLanguages, useTechnologies } from '@/stores/skills';  // Fix formatting here
+import { useLanguages, useTechnologies } from '@/stores/skills'; // Fix formatting here
 
 import { AVAILABLE_TEMPLATES } from '@/helpers/constants';
 import DEFAULT_RESUME_JSON from '@/helpers/constants/resume-data.json';
