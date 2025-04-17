@@ -1,9 +1,6 @@
 import { ChangeEvent, useCallback, useRef, useState } from 'react';
 import { NavBarActions, NavBarMenu, StyledButton } from './atoms';
-import {
-  useLanguages,
-  useTechnologies,
-} from '@/stores/skills';
+import { useLanguages, useTechnologies } from '@/stores/skills';  // Fix formatting here
 
 import { AVAILABLE_TEMPLATES } from '@/helpers/constants';
 import DEFAULT_RESUME_JSON from '@/helpers/constants/resume-data.json';
@@ -91,10 +88,7 @@ const NavBarLayout = () => {
           volunteer = [],
           awards = [],
         } = uploadedResumeJSON;
-        const {
-          languages = [],
-          technologies = [],
-        } = skills;
+        const { languages = [], technologies = [] } = skills;
         useBasicDetails.getState().reset(basics);
         useLanguages.getState().reset(languages);
         useTechnologies.getState().reset(technologies);
