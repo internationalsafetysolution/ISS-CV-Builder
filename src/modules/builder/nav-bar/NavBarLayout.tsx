@@ -106,7 +106,7 @@ const NavBarLayout = () => {
     <nav className="h-14 w-full bg-resume-852 relative flex py-2.5 pl-2 md:pl-5 pr-1 nd:pr-4 items-center shadow-level-8dp z-20 print:hidden">
       <Link href="/">
         <Image
-          src="https://your-deployed-app.vercel.app/icons/ISS-icon.png"
+          src="https://cv.internationalsafetysolution.com/icons/ISS-icon.png"
           alt="logo"
           height="80"
           width="80"
