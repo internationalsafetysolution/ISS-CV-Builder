@@ -8,7 +8,7 @@ function FeatureSection() {
         <CardPinnnedIcon>
           <Image src="/icons/speed.svg" alt="speed" height="56" width="56" />
         </CardPinnnedIcon>
-        <p className="text-x mr-14">
+        <p className="text-xl mr-14">
           Simple <strong>interface</strong> that helps you build quicky!
         </p>
       </FeatureCard>
@@ -17,8 +17,8 @@ function FeatureSection() {
         <CardPinnnedIcon>
           <Image src="/icons/lock.svg" alt="lock" height="56" width="56" />
         </CardPinnnedIcon>
-        <p className="text-xl mr-14">
-          Your <strong>data</strong> never leaves your device
+        <p className="text-xl mr-28">
+          Customize with <strong>Templates and Themes!</strong>
         </p>
       </FeatureCard>
     </>
