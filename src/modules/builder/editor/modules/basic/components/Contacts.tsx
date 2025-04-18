@@ -70,7 +70,7 @@ const Contacts = ({
         }}
       />
       <TextField
-        label="Relevant Experience"
+        label="Date of Birth"
         variant="filled"
         value={basicTabs.relExp}
         onChange={(event: ChangeEvent<HTMLInputElement>) => {
