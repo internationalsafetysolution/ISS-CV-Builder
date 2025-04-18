@@ -1,10 +1,7 @@
 import { IItem } from '@/stores/index.interface';
 import { SectionHeading } from '../atoms/SectionHeading';
 import { useRef } from 'react';
-import {
-  useLanguages,
-  useTechnologies,
-} from '../../../stores/skills';
+import { useLanguages, useTechnologies } from '../../../stores/skills';
 import { scrollToElement } from '../../../helpers/utils/index';
 
 export const SkillsSection = ({ title, list }: { title: string; list: IItem[] }) => {
