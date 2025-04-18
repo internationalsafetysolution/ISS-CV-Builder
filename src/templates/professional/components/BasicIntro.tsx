@@ -14,7 +14,7 @@ export default function BasicIntro({ basics }: { basics: IBasics }) {
         <Role className="text-sm">{basics.label}</Role>
         {basics.relExp && (
           <span className="text-xs">
-            Relevant experience:&nbsp;<span className="font-medium">{basics.relExp}</span>
+            Date of Birth:&nbsp;<span className="font-medium">{basics.relExp}</span>
           </span>
         )}
 
