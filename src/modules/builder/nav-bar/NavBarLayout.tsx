@@ -17,7 +17,6 @@ import { useAwards } from '@/stores/awards';
 import { useBasicDetails } from '@/stores/basic';
 import { useEducations } from '@/stores/education';
 import { useExperiences } from '@/stores/experience';
-import { useVoluteeringStore } from '@/stores/volunteering';
 import { Menu, MenuItem } from '@mui/material';
 
 const TOTAL_TEMPLATES_AVAILABLE = Object.keys(AVAILABLE_TEMPLATES).length;
@@ -45,7 +44,6 @@ const NavBarLayout = () => {
       work: useExperiences.getState().experiences,
       education: useEducations.getState().academics,
       awards: useAwards.getState().awards,
-      volunteer: useVoluteeringStore.getState().volunteeredExps,
       skills: {
         languages: useLanguages.getState().get(),
         technologies: useTechnologies.getState().get(),
@@ -85,7 +83,6 @@ const NavBarLayout = () => {
             involvements: '',
             achievements: '',
           },
-          volunteer = [],
           awards = [],
         } = uploadedResumeJSON;
         const { languages = [], technologies = [] } = skills;

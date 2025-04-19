@@ -13,7 +13,6 @@ import { StateContext } from '@/modules/builder/resume/ResumeLayout';
 import UnratedSkills from './components/UnratedSkills';
 import Work from './components/Work';
 import styled from '@emotion/styled';
-import { VolunteerSection } from '../modern/components/Volunteer';
 
 const ResumeContainer = styled.div`
   display: flex;
@@ -106,11 +105,6 @@ export default function ProfessionalTemplate() {
         <SectionValidator value={resumeData.education}>
           <Section title="Education">
             <Education education={resumeData.education} />
-          </Section>
-        </SectionValidator>
-        <SectionValidator value={resumeData.volunteer}>
-          <Section title="Volunteer">
-            <VolunteerSection volunteer={resumeData.volunteer} />
           </Section>
         </SectionValidator>
       </RightSection>

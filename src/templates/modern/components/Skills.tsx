@@ -1,38 +1,18 @@
 import { IItem } from '@/stores/index.interface';
 import { SectionHeading } from '../atoms/SectionHeading';
 import { useRef } from 'react';
-import {
-  useLanguages,
-  useFrameworks,
-  useLibraries,
-  usePractices,
-  useDatabases,
-  useTechnologies,
-  useTools,
-} from '../../../stores/skills';
+import { useLanguages, useTechnologies } from '../../../stores/skills';
 import { scrollToElement } from '../../../helpers/utils/index';
 
 export const SkillsSection = ({ title, list }: { title: string; list: IItem[] }) => {
   const skillRef = useRef<null | HTMLDivElement>(null);
+
+  // Subscribe only to the remaining relevant hooks (languages and technologies)
   useLanguages.subscribe(() => {
     scrollToElement(skillRef);
   });
-  useFrameworks.subscribe(() => {
-    scrollToElement(skillRef);
-  });
-  useLibraries.subscribe(() => {
-    scrollToElement(skillRef);
-  });
-  usePractices.subscribe(() => {
-    scrollToElement(skillRef);
-  });
-  useDatabases.subscribe(() => {
-    scrollToElement(skillRef);
-  });
+
   useTechnologies.subscribe(() => {
-    scrollToElement(skillRef);
-  });
-  useTools.subscribe(() => {
     scrollToElement(skillRef);
   });
 

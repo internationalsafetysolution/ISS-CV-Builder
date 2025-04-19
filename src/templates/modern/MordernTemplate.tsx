@@ -1,6 +1,5 @@
 import { BasicIntro } from './components/BasicIntro';
 import { EducationSection } from './components/Education';
-import { VolunteerSection } from './components/Volunteer';
 import { Objective } from './components/Objective';
 import { SkillsSection } from './components/Skills';
 import { SummarySection } from './components/Summary';
@@ -55,10 +54,6 @@ export default function MordernTemplate() {
 
           <SectionValidator value={resumeData.education}>
             <EducationSection education={resumeData.education} />
-          </SectionValidator>
-
-          <SectionValidator value={resumeData.volunteer}>
-            <VolunteerSection volunteer={resumeData.volunteer} />
           </SectionValidator>
         </div>
       </div>

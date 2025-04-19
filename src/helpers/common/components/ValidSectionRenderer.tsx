@@ -2,7 +2,6 @@ import { Fragment, ReactNode, useMemo } from 'react';
 import { IExperienceItem } from '@/stores/experience.interface';
 import { IEducationItem } from '@/stores/education.interface';
 import { IAwardItem } from '@/stores/awards.interface';
-import { IVolunteeringItem } from '@/stores/volunteering.interface';
 import { ISkillItem } from '@/stores/skill.interface';
 
 export const SectionValidator = ({
@@ -14,7 +13,6 @@ export const SectionValidator = ({
     | IExperienceItem[]
     | IEducationItem[]
     | IAwardItem[]
-    | IVolunteeringItem[]
     | ISkillItem[];
   children: ReactNode;
 }) => {
