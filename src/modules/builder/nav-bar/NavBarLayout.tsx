@@ -91,7 +91,6 @@ const NavBarLayout = () => {
         useTechnologies.getState().reset(technologies);
         useExperiences.getState().reset(work);
         useEducations.getState().reset(education);
-        useVoluteeringStore.getState().reset(volunteer);
         useAwards.getState().reset(awards);
         useActivity.getState().reset(activities);
         setOpenToast(true);
